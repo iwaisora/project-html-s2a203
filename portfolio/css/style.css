@@ -229,7 +229,7 @@ Works
   box-shadow: 1px 0px 1px 2px #161e32;
   /* box-shadowで外枠を */
 }
-.btn-denim:hover{
+.btn-denim:hover {
   border-style: solid;
   opacity: 0.6;
 }
@@ -327,19 +327,19 @@ About
   justify-content: center;
   align-items: center;
 }
-.about-item{
+.about-item {
   font-size: 1.3rem;
 }
 /*--------------------------------
 photo
 ---------------------------------*/
-.photo-content{
+.photo-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-.photo-img{
+.photo-img {
   width: 390px;
   height: auto;
   margin: 0 1em 1em;
@@ -348,39 +348,39 @@ photo
 /*--------------------------------
 contact
 ---------------------------------*/
-.header{
+.header {
   text-align: center;
 }
-.contact-form{
+.contact-form {
   display: flex;
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
 }
-.form-title{
+.form-title {
   margin-bottom: 2px;
   font-size: 1.2rem;
 }
-.contact-item input{
+.contact-item input {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 100%;
 }
-.contact-item select{
+.contact-item select {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 60%;
 }
-.contact-item textarea{
+.contact-item textarea {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
   height: 100px;
   width: 100%;
 }
-.must{
+.must {
   margin-left: 5px;
   padding: 2px;
   font-size: 0.8rem;
@@ -389,7 +389,7 @@ contact
   border-radius: 5px;
   border: 1px solid #ccc;
 }
-.btn{
+.btn {
   width: 100%;
   padding: 10px 50px;
   background-color: #7f6666;
@@ -429,94 +429,9 @@ contact
   text-align: center;
   color: #000;
 }
-/*--------------------------------
-pac-man
----------------------------------*/
-/* LESS Vars
-@primaryClr: #fed75a; // Adjust this value to change the color
-@pacman-zise: 70px;s
-
-body {
-  background: #1d1d1d;
-  height: 100%;
+.pos {
+  /*background-color: aqua;*/
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
-
-.pac-man {
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-top: 5em;
-  border-radius: 100em 100em 0 0;
-  background: #f00;
-  transform-origin: bottom;
-  animation: eating-top .5s infinite;
-
-  &, &::before {
-    width: @pacman-zise;
-    height: calc(@pacman-zise/2);
-    background: @primaryClr;
-  }
-
-  &::before {
-    content: '';
-    display: block;
-    margin-top: calc(@pacman-zise/2);
-    position: absolute;
-    transform-origin: top;
-    border-radius: 0 0 100em 100em;
-    transform: rotate(80deg);
-    animation: eating-bottom .5s infinite;
-  }
-
-  &::after {
-    position: absolute;
-    border-radius: 100em;
-    content: '';
-    display: block;
-    height: 20px;
-    width: 20px;
-    margin-top: calc((@pacman-zise / 2) - 10px);
-    margin-left: calc((@pacman-zise / 2) - 10px);
-    transform-origin: center;
-    animation:
-      center .5s infinite,
-      ball .5s -.33s infinite linear;
-  }
-}
-
-@keyframes eating-top{
-  0%{ transform: rotate(-40deg); }
-  50% { transform: rotate(0deg); }
-  100%{ transform: rotate(-40deg); }
-}
-
-@keyframes eating-bottom{
-  0%{ transform: rotate(80deg); }
-  50% { transform: rotate(0deg); }
-  100%{ transform: rotate(80deg); }
-}
-
-@keyframes center{
-  0%{ transform: rotate(40deg); }
-  50% { transform: rotate(0deg); }
-  100%{ transform: rotate(40deg); }
-}
-
-@keyframes ball{
-  0%{
-    opacity: .7;
-    box-shadow:
-      70px 0 0 0 @primaryClr,
-      120px 0 0 0 @primaryClr,
-      170px 0 0 0 @primaryClr,
-      220px 0 0 0 @primaryClr
-    ;
-  }
-  100% {
-    box-shadow:
-      20px 0 0 0 @primaryClr,
-      70px 0 0 0 @primaryClr,
-      120px 0 0 0 @primaryClr,
-      170px 0 0 0 @primaryClr
-    ;
-  }
-*/
